@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 class AddFishForm extends Component {
+    //ref created for form data- similiar to body parser for express.
     nameRef = React.createRef();
     priceRef = React.createRef();
     statusRef = React.createRef();
