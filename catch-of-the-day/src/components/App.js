@@ -4,7 +4,7 @@ import Header from "./Header";
 import Inventory from "./Inventory";
 import sampleFishes from "../sample-fishes";
 import Fish from "./Fish";
-import base from "../base";
+// import base from "../base";
 
 class App extends Component {
     state = {
@@ -75,11 +75,17 @@ class App extends Component {
                     <div className="menu">
                         <Header tagline="Fresh Seafood Market"/>
                         <ul className="fishes">
-                            {Object.keys(this.state.fishes).map(key => <Fish index={key} details={this.state.fishes[key]} key={key} addToOrder={this.addToOrder} />)}
+                            {Object.keys(this.state.fishes).map(key => <Fish index={key} details={this.state.fishes[key]} 
+                            // key={key} addToOrder={this.addToOrder} 
+                            />)}
                         </ul>                        
                     </div>
-                    <Order deleteOrder={this.deleteOrder} fishes={this.state.fishes} order={this.state.order}/>
-                    <Inventory deleteFish={this.deleteFish} updateFish={this.updateFish} fishes={this.state.fishes} loadSampleFishes={this.loadSampleFishes} addFish={this.addFish}/>
+                    <Order 
+                    deleteOrder={this.deleteOrder} fishes={this.state.fishes} order={this.state.order}
+                    />
+                    <Inventory 
+                    deleteFish={this.deleteFish} updateFish={this.updateFish} fishes={this.state.fishes} 
+                    loadSampleFishes={this.loadSampleFishes} addFish={this.addFish}/>
                 </div>
             </Fragment>
         )

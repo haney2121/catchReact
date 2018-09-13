@@ -1,3 +1,11 @@
+/*My Style*/
+.flexbox {display: flex;}
+li.flexbox > * {flex: 1;  border-right: 1px solid #000; border-top: 1px solid #000; padding: 1rem 10px;}
+li.flexbox > *:first-child {border-left: 1px solid #000;}
+li.flexbox:last-child {border-bottom: 1px solid #000;}
+li.header { background: #282828; color: #fff;}
+li.header > * { border: none;}
+
 .order-enter {
   -webkit-transform: translateX(-120%);
           transform: translateX(-120%);
@@ -494,11 +502,8 @@ ul.order li span.count span {
           transform: translateZ(0);
 }
 .menu-fish {
-  border-bottom: 2px solid #000;
-  border-top: 1px solid #000;
-  padding-bottom: 2rem;
-  padding-top: 2rem;
-  margin-bottom: 5px;
+  /* border-bottom: 2px solid #000; */
+  /* border-top: 1px solid #000; */
   clear: both;
   overflow: hidden;
 }

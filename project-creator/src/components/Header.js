@@ -5,12 +5,12 @@ const Header = ({tagline}) => {
     <Fragment>
     <header className="top">
       <h1>
-        Project
-        <span className="ofThe">
+      Integration Matrix
+        {/* <span className="ofThe">
           <span className="of">Of</span>
           <span className="the">The</span>
-        </span>
-        Day
+        </span> */}
+        
       </h1>
       <h3 className="tagline">
         <span>{tagline}</span>

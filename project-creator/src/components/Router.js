@@ -1,14 +1,15 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Landing from './Landing';
 import App from './App';
-import ProjectApp from './ProjectApp';
 import NotFound from './NotFound';
+
 
 const Router = () => (
   <BrowserRouter>
     <Switch>
-      <Route exact path="/" component={App} />
-      <Route path="/projects" component={ProjectApp} />
+      <Route exact path="/" component={Landing} />
+      <Route path="/matrix" component={App} />      
       <Route component={NotFound} />
     </Switch>
   </BrowserRouter>
